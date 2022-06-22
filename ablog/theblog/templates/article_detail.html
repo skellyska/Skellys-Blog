@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}Create a New Blog Post{% endblock %}
+{% block content %}
+
+<!--styling for article view-->
+<h1>{{ post.title }}</h1>
+<small>By: {{ post.author }}</small>
+<hr>
+<br/>
+{{ post.body }}
+
+<br/><br/>
+<a href="{% url 'home' %}" class="btn btn-secondary">Back</a>
+
+{% endblock %}
